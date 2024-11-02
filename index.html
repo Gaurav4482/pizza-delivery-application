@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>Pizza Delivery Service</h1>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Pizza Delivery!</h2>
+            <p>Customize your pizza and enjoy it hot and fresh at your doorstep. Choose from a variety of sizes, bases, sauces, and toppings!</p>
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <h3>Margherita Pizza</h3>
+                <p>Classic cheese and tomato pizza topped with fresh basil.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Pepperoni Pizza</h3>
+                <p>Delicious pepperoni slices on a bed of melted mozzarella cheese.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Vegetarian Pizza</h3>
+                <p>A mix of fresh vegetables topped with mozzarella cheese.</p>
+            </div>
+            <div class="menu-item">
+                <h3>BBQ Chicken Pizza</h3>
+                <p>Grilled chicken with BBQ sauce and red onions.</p>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2>Customize Your Pizza</h2>
+            <form id="pizzaForm">
+                <div class="form-group">
+                    <label for="size">Choose Pizza Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="extra-large">Extra Large</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="base">Choose a Base:</label>
+                    <select id="base" name="base" required>
+                        <option value="thin">Thin Crust</option>
+                        <option value="regular">Regular Crust</option>
+                        <option value="deep-dish">Deep Dish</option>
+                        <option value="gluten-free">Gluten-Free</option>
+                        <option value="stuffed-crust">Stuffed Crust</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="sauce">Choose a Sauce:</label>
+                    <select id="sauce" name="sauce" required>
+                        <option value="tomato">Tomato Sauce</option>
+                        <option value="pesto">Pesto Sauce</option>
+                        <option value="alfredo">Alfredo Sauce</option>
+                        <option value="bbq">BBQ Sauce</option>
+                        <option value="garlic-ranch">Garlic Ranch</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cheese">Choose Cheese:</label>
+                    <select id="cheese" name="cheese" required>
+                        <option value="mozzarella">Mozzarella</option>
+                        <option value="cheddar">Cheddar</option>
+                        <option value="parmesan">Parmesan</option>
+                        <option value="vegan">Vegan Cheese</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Choose Veggies:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="veggies" value="olives"> Olives</label>
+                        <label><input type="checkbox" name="veggies" value="bell-peppers"> Bell Peppers</label>
+                        <label><input type="checkbox" name="veggies" value="onions"> Onions</label>
+                        <label><input type="checkbox" name="veggies" value="mushrooms"> Mushrooms</label>
+                        <label><input type="checkbox" name="veggies" value="spinach"> Spinach</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Choose Meats:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="meats" value="pepperoni"> Pepperoni</label>
+                        <label><input type="checkbox" name="meats" value="sausage"> Sausage</label>
+                        <label><input type="checkbox" name="meats" value="bacon"> Bacon</label>
+                        <label><input type="checkbox" name="meats" value="chicken"> Chicken</label>
+                        <label><input type="checkbox" name="meats" value="ham"> Ham</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Choose Spices:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="spices" value="chili-flakes"> Chili Flakes</label>
+                        <label><input type="checkbox" name="spices" value="oregano"> Oregano</label>
+                        <label><input type="checkbox" name="spices" value="basil"> Basil</label>
+                        <label><input type="checkbox" name="spices" value="garlic"> Garlic</label>
+                    </div>
+                </div>
+
+                <h2>Delivery Information</h2>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Delivery Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Contact Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to contact us:</p>
+            <p>Email: support@pizzadelivery.com</p>
+            <p>Phone: +1-800-555-0199</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pizza Delivery Service. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

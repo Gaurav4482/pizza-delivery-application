@@ -1,0 +1,86 @@
+        /* General Styling */
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    /* Header Styling */
+    
+    header {
+        background: #4CAF50;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    header nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    /* Main Content Styling */
+    
+    main {
+        padding: 20px;
+    }
+    
+    section {
+        margin-bottom: 30px;
+    }
+    
+    .menu-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    input,
+    select,
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    /* Checkbox Group Styling */
+    
+    .checkbox-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .checkbox-group label {
+        width: 45%;
+        margin-right: 10px;
+    }
+    /* Button Styling */
+    
+    button[type="submit"] {
+        background-color: #4CAF50;
